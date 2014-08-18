@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>LF10</name>
+    <name>SSS10</name>
 
     <description>
-        Static and Dynamic Procedure for Wind Loads.
+        Permissible Structural Steel Seismic-Force-Resisting Systems in accordance with NBC 2010 and CSA S16-09.
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
