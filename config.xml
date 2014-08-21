@@ -16,7 +16,7 @@
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         
     </author>
-    
+    <preference name="KeyboardShrinksView" value="false" />
     <icon src="res/android/icon-72-hdpi.png" />
     <gap:splash src="splash.jpg" />
     <platform name="ios">
