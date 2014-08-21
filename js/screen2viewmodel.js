@@ -44,8 +44,6 @@ function ViewModel(session)
     {
         $("#a-save-confirm").unbind()
                             .removeAttr("data-bind");
-        $("#div-footer-with-save").addClass("hidden");
-        $("#div-footer-with-output").removeClass("hidden");
 
         var data = window.localStorage.getItem(storageKeys.savedOutput);
         var items = JSON.parse(data);
@@ -74,5 +72,8 @@ function ViewModel(session)
             $(window).scrollTop($(window).scrollTop() + 1)
             
         }
+        $(window).resize()
+        $("#div-footer-with-save").addClass("hidden");
+        $("#div-footer-with-output").removeClass("hidden");
     }
 };
