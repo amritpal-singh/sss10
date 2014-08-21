@@ -65,8 +65,9 @@ function ViewModel(session)
         window.localStorage.removeItem(storageKeys.sessionInput);
 
         $("#modal-output").modal("hide");
-        // $("#div-footer-with-output").removeClass("hidden");
-        // $("#div-footer-with-save").addClass("hidden");
+        $("#div-footer-with-output").removeClass("hidden");
+        $("#div-footer-with-save").addClass("hidden");
+        
         if($(window).scrollTop($(window).scrollTop() > 0))
         {
             $(window).scrollTop($(window).scrollTop() - 10);    
