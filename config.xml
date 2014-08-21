@@ -18,7 +18,7 @@
     </author>
     
     <icon src="res/android/icon-72-hdpi.png" />
-    
+    <gap:splash src="splash.png" />
     <platform name="ios">
               <!-- iOS 7.0+ -->
               <!-- iPhone / iPod Touch  -->
