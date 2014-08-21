@@ -16,12 +16,12 @@
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         
     </author>
-    <preference name="KeyboardShrinksView" value="true" />
-    <preference name="DisallowOverscroll " value="true" />
     
     <icon src="res/android/icon-72-hdpi.png" />
     <gap:splash src="splash.jpg" />
     <platform name="ios">
+              <preference name="KeyboardShrinksView" value="true" />
+              <preference name="DisallowOverscroll " value="true" />
               <!-- iOS 7.0+ -->
               <!-- iPhone / iPod Touch  -->
               <icon src="res/ios/ios_57.png" width="60" height="60" />
