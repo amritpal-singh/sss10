@@ -67,5 +67,12 @@ function ViewModel(session)
         window.localStorage.removeItem(storageKeys.sessionInput);
 
         $("#modal-output").modal("hide");
+        if($(window).scrollTop($(window).scrollTop() > 0))
+        {
+            $(window).scrollTop($(window).scrollTop() - 1);    
+        }else{
+            $(window).scrollTop($(window).scrollTop() + 1)
+            
+        }
     }
 };
