@@ -17,7 +17,7 @@
         
     </author>
     
-    <icon src="res/android/icon-72-hdpi.png" width="60" height="60" />
+    <icon src="res/android/icon-72-hdpi.png" />
     
     <platform name="ios">
               <!-- iOS 7.0+ -->
