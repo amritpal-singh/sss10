@@ -66,14 +66,19 @@ function ViewModel(session)
         // window.localStorage.setItem(storageKeys.savedOutput, ko.toJSON(items));
         // window.localStorage.removeItem(storageKeys.sessionInput);
 
-       
         myVar = setTimeout(function(){
-            $(document).scrollTop($(document).scrollTop() + 100);
-             $('#headingh4').html($('#headingh4').html() + ' - ' + $('.footer:first').css('bottom') +'px');
+            $(document).scrollTop($(document).scrollTop() + 5);
+             $//('#headingh4').html($('#headingh4').html() + ' - ' + $('.footer:first').css('bottom') +'px');
+            $('.footer').css('bottom', 0);
             clearTimeout(myVar);
-        }, 3000);
-        $("#modal-output").modal("hide"); 
-        $('.footer:first').css('bottom', 0);
+        }, 500);
+        
+        myVar1 = setTimeout(function(){
+            $("#modal-output").modal("hide"); 
+            clearTimeout(myVar1);
+        }, 800);
+        
+       
        
         // $("#div-footer-with-output").removeClass("hidden");
         // $("#div-footer-with-save").addClass("hidden");
