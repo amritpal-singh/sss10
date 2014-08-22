@@ -40,41 +40,38 @@ function ViewModel(session)
     self.outputName = ko.observable();
     self.needsConsideration = ko.observable(false);
 
+
+
     self.save = function()
     {
-        $("#a-save-confirm").unbind()
-                            .removeAttr("data-bind");
+        // $("#a-save-confirm").unbind()
+        //                     .removeAttr("data-bind");
 
-        var data = window.localStorage.getItem(storageKeys.savedOutput);
-        var items = JSON.parse(data);
-        if (!(items && items instanceof Array))
-        {
-            items = new Array();
-        }
+        // var data = window.localStorage.getItem(storageKeys.savedOutput);
+        // var items = JSON.parse(data);
+        // if (!(items && items instanceof Array))
+        // {
+        //     items = new Array();
+        // }
 
-        var output = new OutputViewModel(self);
-        if(!self.outputName())
-        {
-            self.outputName(output.id);
-            output.name = output.id;
-        }
+        // var output = new OutputViewModel(self);
+        // if(!self.outputName())
+        // {
+        //     self.outputName(output.id);
+        //     output.name = output.id;
+        // }
 
-        items.push(output);
+        // items.push(output);
 
-        window.localStorage.setItem(storageKeys.savedOutput, ko.toJSON(items));
-        window.localStorage.removeItem(storageKeys.sessionInput);
+        // window.localStorage.setItem(storageKeys.savedOutput, ko.toJSON(items));
+        // window.localStorage.removeItem(storageKeys.sessionInput);
 
+        $('#headingh4').html($('#headingh4').html() + ' - ' + $(document).height());
         $("#modal-output").modal("hide");
-        $("#div-footer-with-output").removeClass("hidden");
-        $("#div-footer-with-save").addClass("hidden");
+        $('#headingh4').html($('#headingh4').html() + ' - ' + $(document).height());
+        // $("#div-footer-with-output").removeClass("hidden");
+        // $("#div-footer-with-save").addClass("hidden");
         
-        if($(window).scrollTop($(window).scrollTop() > 0))
-        {
-            $(window).scrollTop($(window).scrollTop() - 10);    
-        }else{
-            $(window).scrollTop($(window).scrollTop() + 10)
-            
-        }
-        $(window).resize();
+        
     }
 };

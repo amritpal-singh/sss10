@@ -4,6 +4,7 @@ $(document).ready(function () {
     onDeviceReady()
 });
 
+
 // call the other functions used on screen 2
 function onDeviceReady()
 {
