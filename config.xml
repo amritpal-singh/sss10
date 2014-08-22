@@ -19,7 +19,7 @@
     
     <icon src="res/android/icon-72-hdpi.png" />
     
-    <gap:splash src="res/screen/ios/bg_640x1136ios.png" gap:platform="ios"/>
+    <gap:splash src="res/screen/ios/bg_640x1136.png" gap:platform="ios"/>
     <platform name="ios">
               <preference name="KeyboardShrinksView" value="true" />
               <preference name="DisallowOverscroll " value="true" />
@@ -42,19 +42,19 @@
               <icon src="res/ios/ios_114.png" width="144" height="144" />
 
               <!-- iPhone and iPod touch -->
-              <gap:screen src="res/screen/ios/bg_320x480ios.png" gap:platform="ios" width="320" height="480" />
-              <gap:screen src="res/screen/ios/bg_640x960ios.png" gap:platform="ios" width="640" height="960" />
+              <gap:screen src="res/screen/ios/bg_320x480.png" gap:platform="ios" width="320" height="480" />
+              <gap:screen src="res/screen/ios/bg_640x960.png" gap:platform="ios" width="640" height="960" />
 
               <!-- iPhone 5 / iPod Touch (5th Generation) -->
-              <gap:screen src="res/screen/ios/bg_640x1136ios.png" gap:platform="ios" width="640" height="1136" />
+              <gap:screen src="res/screen/ios/bg_640x1136.png" gap:platform="ios" width="640" height="1136" />
 
               <!-- iPad -->
-              <gap:screen src="res/screen/ios/bg_768x1004ios.png" gap:platform="ios" width="768" height="1024" />
-              <gap:screen src="res/screen/ios/bg_1024x768ios.png" gap:platform="ios" width="1024" height="768" />
+              <gap:screen src="res/screen/ios/bg_768x1004.png" gap:platform="ios" width="768" height="1024" />
+              <gap:screen src="res/screen/ios/bg_1024x768.png" gap:platform="ios" width="1024" height="768" />
 
               <!-- Retina iPad -->
-              <gap:screen src="res/screen/ios/bg_1536x2008ios.png" gap:platform="ios" width="1536" height="2048" />
-              <gap:screen src="res/screen/ios/bg_2048x1496ios.png" gap:platform="ios" width="2048" height="1536" />
+              <gap:screen src="res/screen/ios/bg_1536x2008.png" gap:platform="ios" width="1536" height="2048" />
+              <gap:screen src="res/screen/ios/bg_2048x1496.png" gap:platform="ios" width="2048" height="1536" />
      </platform>
 
      <platform name="android">
