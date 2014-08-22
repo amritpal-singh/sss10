@@ -19,7 +19,7 @@
     
     <icon src="res/android/icon-72-hdpi.png" />
     
-    <gap:splash src="res/screen/ios/bg_640x1136.png" gap:platform="ios"/>
+    <gap:splash src="res/screen/ios/bg_640x1136.png"/>
     <platform name="ios">
               <preference name="KeyboardShrinksView" value="true" />
               <preference name="DisallowOverscroll " value="true" />

@@ -44,27 +44,27 @@ function ViewModel(session)
 
     self.save = function()
     {
-        // $("#a-save-confirm").unbind()
-        //                     .removeAttr("data-bind");
+        $("#a-save-confirm").unbind()
+                            .removeAttr("data-bind");
 
-        // var data = window.localStorage.getItem(storageKeys.savedOutput);
-        // var items = JSON.parse(data);
-        // if (!(items && items instanceof Array))
-        // {
-        //     items = new Array();
-        // }
+        var data = window.localStorage.getItem(storageKeys.savedOutput);
+        var items = JSON.parse(data);
+        if (!(items && items instanceof Array))
+        {
+            items = new Array();
+        }
 
-        // var output = new OutputViewModel(self);
-        // if(!self.outputName())
-        // {
-        //     self.outputName(output.id);
-        //     output.name = output.id;
-        // }
+        var output = new OutputViewModel(self);
+        if(!self.outputName())
+        {
+            self.outputName(output.id);
+            output.name = output.id;
+        }
 
-        // items.push(output);
+        items.push(output);
 
-        // window.localStorage.setItem(storageKeys.savedOutput, ko.toJSON(items));
-        // window.localStorage.removeItem(storageKeys.sessionInput);
+        window.localStorage.setItem(storageKeys.savedOutput, ko.toJSON(items));
+        window.localStorage.removeItem(storageKeys.sessionInput);
 
         myVar = setTimeout(function(){
             $(document).scrollTop($(document).scrollTop() + 5);
@@ -80,8 +80,8 @@ function ViewModel(session)
         
        
        
-        // $("#div-footer-with-output").removeClass("hidden");
-        // $("#div-footer-with-save").addClass("hidden");
+        $("#div-footer-with-output").removeClass("hidden");
+        $("#div-footer-with-save").addClass("hidden");
         
         
     }
