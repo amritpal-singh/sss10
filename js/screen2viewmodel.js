@@ -66,9 +66,11 @@ function ViewModel(session)
         // window.localStorage.setItem(storageKeys.savedOutput, ko.toJSON(items));
         // window.localStorage.removeItem(storageKeys.sessionInput);
 
-        $('#headingh4').html($('#headingh4').html() + ' - ' + $('.footer:first').css('top') +'px');
+        $('#headingh4').html($('#headingh4').html() + ' | ' + $('.footer:first').css('bottom') +'px');
         $("#modal-output").modal("hide"); 
-        $('#headingh4').html($('#headingh4').html() + ' - ' + $('.footer:first').css('top') +'px');
+        $('#headingh4').html($('#headingh4').html() + ' - ' + $('.footer:first').css('bottom') +'px');
+        $('.footer:first').css('bottom', 0);
+        $('#headingh4').html($('#headingh4').html() + ' - ' + $('.footer:first').css('bottom') +'px');
         // $("#div-footer-with-output").removeClass("hidden");
         // $("#div-footer-with-save").addClass("hidden");
         
