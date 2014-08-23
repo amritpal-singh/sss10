@@ -9,12 +9,19 @@
         <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript">
 $(document).ready(function() {
-	var devicePlatform = device.platform;
-	$('#splash').text(devicePlatform);
-	console.log(devicePlatform);
+
+	var width = $(window).width();
+	var height = $(window).height();
+
+	$('.row-fluid').html($('.row-fluid').html() + ' - ' + width + ' - '+ height);
+	
+	// $('#splash').css('background', 'url("../Resources/screen/ios/Default~iphone.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0)');
+	// var devicePlatform = device.platform;
+	// $('.stage').html(devicePlatform);
+	// console.log(devicePlatform);
 var fxn = setTimeout(function() {
 	 clearTimeout(this);
-	 //$('#splash').hide();
+	 
 
 	 console.log($(window).height());
 }, 4000);
@@ -22,7 +29,7 @@ var fxn = setTimeout(function() {
 })
         </script>
         <style>
-        	#splash
+        	#splas
         	{
         		position: fixed;
         		top: 0;
