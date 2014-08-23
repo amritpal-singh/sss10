@@ -73,7 +73,17 @@ var fxn = setTimeout(function() {
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+			// Wait for device API libraries to load
+			//
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			// device APIs are available
+			//
+			function onDeviceReady() {
+			//	navigator.splashscreen.show();
 			navigator.splashscreen.hide();
+			}
+
         </script>
     </body>
 </html>

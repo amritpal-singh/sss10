@@ -15,7 +15,9 @@
     <author href="https://build.phonegap.com" email="contact@tranceserve.com">
       TS TEAM    
     </author>
-    
+    <feature name="SplashScreen">
+		<param name="ios-package" value="CDVSplashScreen" />
+	</feature>
     
     <icon src="res/android/icon-72-hdpi.png" />
     
