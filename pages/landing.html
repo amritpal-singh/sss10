@@ -10,26 +10,22 @@
         <script type="text/javascript">
 $(document).ready(function() {
 
-	var width = $(window).width();
-	var height = $(window).height();
-
-	$('.row-fluid').html($('.row-fluid').html() + ' - ' + width + ' - '+ height);
+	var width = parseInt($(window).width());
+	var height = parseInt($(window).height());
+	var splash = "../Resources/screen/ios/bg_" + width + 'x' + height + ".png";
 	
-	// $('#splash').css('background', 'url("../Resources/screen/ios/Default~iphone.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0)');
-	// var devicePlatform = device.platform;
-	// $('.stage').html(devicePlatform);
-	// console.log(devicePlatform);
+	$('#splash').css('background', 'url('+splash+') no-repeat scroll 50% 50% rgba(0, 0, 0, 0)');
+	
 var fxn = setTimeout(function() {
 	 clearTimeout(this);
+	 $('#splash').hide();
 	 
-
-	 console.log($(window).height());
-}, 4000);
+}, 3000);
 	
 })
         </script>
         <style>
-        	#splas
+        	#splash
         	{
         		position: fixed;
         		top: 0;
