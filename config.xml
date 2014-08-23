@@ -16,6 +16,8 @@
       TS TEAM    
     </author>
     
+    <plugin name="Device" value="org.apache.cordova.Device" />
+    
     <icon src="res/android/icon-72-hdpi.png" />
     
     <preference name="fullscreen" value="true" />
