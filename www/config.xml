@@ -26,6 +26,14 @@
     <icon gap:platform="ios" height="114" src="res/ios/icon-114.png" width="114" />
     <icon gap:platform="ios" height="144" src="res/ios/icon-72-2x.png" width="144" />
     
+    <preference name="phonegap-version" value="3.5.0" />
+    
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+
+    <gap:splash src="res/splash/android/screen-hdpi-portrait.jpg" />
+    <preference name="splash-screen-duration" value="30000"/>
+    
     <access origin="*" />
 
     
