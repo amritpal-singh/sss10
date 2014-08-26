@@ -14,7 +14,7 @@
       TS TEAM    
     </author>
     
-    <icon src="res/android/icon-72-hdpi.png" />
+    <icon src="res/android/icon-96-xhdpi.png" />
 
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="res/android/icon-48-mdpi.png" />
@@ -33,6 +33,8 @@
 
     <gap:splash src="res/splash/android/screen-hdpi-portrait.jpg" />
     <preference name="splash-screen-duration" value="30000"/>
+    
+    <gap:splash src="res/splash/android/screen-hdpi-portrait.jpg" />
     
     <access origin="*" />
 
