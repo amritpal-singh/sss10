@@ -36,7 +36,13 @@
     <gap:platform name="ios" />
     <gap:splash src="res/splash/android/screen-hdpi-portrait.png" />
     <preference name="splash-screen-duration" value="30000"/>
-    
+
+    <gap:splash src="res/splash/ios/Default~iphone.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="res/splash/ios/Default@2x~iphone.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="res/splash/ios/Default-Landscape@2x~ipad.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="res/splash/ios/Default-Landscape~ipad.png" gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="res/splash/ios/Default-Portrait@2x~ipad.png" gap:platform="ios" width="768" height="1024" />
+
     <access origin="*" />
 
     
