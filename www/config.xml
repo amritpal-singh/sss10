@@ -4,6 +4,7 @@
         id          = "com.cisc.sssten"
         version     = "1.0.0" >
 
+    <preference name="phonegap-version" value="3.5.0" />
     <name>SSS10</name>
 
     <description>
@@ -14,6 +15,7 @@
       TS TEAM    
     </author>
     
+    <gap:platform name="android" />
     <icon src="res/android/icon-96-xhdpi.png" />
 
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/android/icon-36-ldpi.png" />
@@ -21,17 +23,15 @@
     <icon gap:platform="android" gap:qualifier="hdpi" src="res/android/icon-72-hdpi.png" />
     <icon gap:platform="android" gap:qualifier="xhdpi" srcdro="res/android/icon-96-xhdpi.png" />
     
+    <gap:platform name="ios" />
     <icon gap:platform="ios" height="57" src="res/ios/icon-57.png" width="57" />
     <icon gap:platform="ios" height="72" src="res/ios/icon-72.png" width="72" />
     <icon gap:platform="ios" height="114" src="res/ios/icon-114.png" width="114" />
     <icon gap:platform="ios" height="144" src="res/ios/icon-72-2x.png" width="144" />
     
-    <preference name="phonegap-version" value="3.5.0" />
     
-    <gap:platform name="ios" />
-    <gap:platform name="android" />
 
-    <gap:splash src="res/splash/android/screen-hdpi-portrait.jpg" />
+    <gap:splash src="res/splash/android/screen-hdpi-portrait.png" />
     <preference name="splash-screen-duration" value="30000"/>
     
     <access origin="*" />
