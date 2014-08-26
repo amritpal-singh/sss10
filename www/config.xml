@@ -34,8 +34,6 @@
     <gap:splash src="res/splash/android/screen-hdpi-portrait.jpg" />
     <preference name="splash-screen-duration" value="30000"/>
     
-    <gap:splash src="res/splash/android/screen-hdpi-portrait.jpg" />
-    
     <access origin="*" />
 
     
