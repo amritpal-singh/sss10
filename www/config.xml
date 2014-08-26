@@ -34,6 +34,7 @@
 
     <gap:platform name="android" />
     <gap:platform name="ios" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:splash src="res/splash/android/screen-hdpi-portrait.png" />
     <preference name="splash-screen-duration" value="30000"/>
 
