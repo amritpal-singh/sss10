@@ -14,11 +14,11 @@
 			var height = parseInt($(window).height());
 			var port = "../res/splash/android/screen-mdpi-portrait.jpg";
 			var land = "../res/splash/android/screen-mdpi-landscape.jpg";
-			$('#splash').append("<img src="+port+" style='min-width:100%; height:auto'/>");
+			$('#splash').css("background","url("+port+")  no-repeat fixed center center rgba(0, 0, 0, 0)");
 			
 		var fxn = setTimeout(function() {
-			 clearTimeout(this);
-			 $('#splash').hide();
+			 // clearTimeout(this);
+			 // $('#splash').hide();
 			 
 		}, 3000);
 			
@@ -27,6 +27,7 @@
         <style>
         	#splash
         	{
+        		background-size: cover!important;
         		position: fixed;
         		top: 0;
         		bottom: 0; 
