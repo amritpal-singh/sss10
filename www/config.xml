@@ -36,7 +36,7 @@
     <gap:platform name="ios" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:splash src="res/splash/android/screen-hdpi-portrait.png" />
-    <preference name="splash-screen-duration" value="30000"/>
+    <preference name="splash-screen-duration" value="0"/>
 
     <gap:splash src="res/splash/ios/Default-iphone.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="res/splash/ios/Default@2x-iphone.png" gap:platform="ios" width="640" height="960" />
