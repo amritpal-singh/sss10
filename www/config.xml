@@ -14,6 +14,9 @@
     <author href="https://build.phonegap.com" email="contact@tranceserve.com">
       TS TEAM    
     </author>
+    <preference name="fullscreen" value="true" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <preference name="auto-hide-splash-screen" value="false" />
     
     <icon src="res/android/icon-96-xhdpi.png" />
 
@@ -35,14 +38,7 @@
     <gap:platform name="android" />
     <gap:platform name="ios" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:splash src="res/splash/android/screen-hdpi-portrait.png" />
     <preference name="splash-screen-duration" value="0"/>
-
-    <gap:splash src="res/splash/ios/Default-iphone.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="res/splash/ios/Default@2x-iphone.png" gap:platform="ios" width="640" height="960" />
-    <gap:splash src="res/splash/ios/Default-Landscape@2x-ipad.png" gap:platform="ios" width="640" height="1136" />
-    <gap:splash src="res/splash/ios/Default-Landscape-ipad.png" gap:platform="ios" width="1024" height="768" />
-    <gap:splash src="res/splash/ios/Default-Portrait@2x-ipad.png" gap:platform="ios" width="768" height="1024" />
 
     <access origin="*" />
 
